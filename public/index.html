@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lewis Hamilton API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">API &amp; Fan Page</span>
+        <h1>Lewis Hamilton</h1>
+        <p>Um site bonito, animado e funcional sobre o maior piloto de Fórmula 1.</p>
+        <div class="actions">
+          <button id="loadApiBtn" class="button">Ver dados da API</button>
+          <a href="#stats" class="button button-secondary">Estatísticas</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="glow-circle"></div>
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Lewis Hamilton" />
+      </div>
+    </header>
+
+    <section class="intro" id="stats">
+      <div class="intro-card glass-card pulse-card">
+        <h2>Sobre</h2>
+        <p>A API abaixo retorna os maiores feitos, citações e estatísticas de Lewis Hamilton em um layout moderno.</p>
+      </div>
+      <div class="intro-grid">
+        <article class="stats-card">
+          <strong>7x</strong>
+          <span>Campeão Mundial</span>
+        </article>
+        <article class="stats-card">
+          <strong>196</strong>
+          <span>Podiums</span>
+        </article>
+        <article class="stats-card">
+          <strong>103</strong>
+          <span>Poles</span>
+        </article>
+        <article class="stats-card">
+          <strong>2007</strong>
+          <span>Primeira vitória</span>
+        </article>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <section class="api-panel glass-card" id="api-panel">
+        <div class="panel-header">
+          <h2>Dados da API</h2>
+          <span class="tag">/api/hamilton</span>
+        </div>
+        <div id="apiResult" class="api-result">
+          <p>Pressione o botão para carregar os dados de Lewis Hamilton.</p>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="quote-card glass-card animated-card">
+          <p>"Não sonhe pequeno, porque você é gigante."</p>
+          <span>— Lewis Hamilton</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

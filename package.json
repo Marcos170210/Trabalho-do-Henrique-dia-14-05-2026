@@ -1,0 +1,14 @@
+{
+  "name": "lewis-hamilton-api-site",
+  "version": "1.0.0",
+  "description": "Site estilizado e animado com API sobre Lewis Hamilton.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
