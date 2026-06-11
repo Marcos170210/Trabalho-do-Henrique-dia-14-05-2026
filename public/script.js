@@ -65,7 +65,7 @@ loadApiBtn.addEventListener('click', loadApiData);
 
   const images = [
     'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80', // F1 car
-    'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80'  // Lewis Hamilton (portrait)
+    'https://www.f1-fansite.com/wp-content/uploads/2020/08/Lewis-Hamilton-2020.jpg'  // Lewis Hamilton (portrait)
   ];
 
   let idx = 0;
