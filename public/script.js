@@ -57,3 +57,32 @@ const loadApiData = async () => {
 };
 
 loadApiBtn.addEventListener('click', loadApiData);
+
+// Image rotator: alterna entre uma foto de Fórmula 1 e uma foto do Lewis Hamilton
+(() => {
+  const heroImg = document.getElementById('heroImg');
+  if (!heroImg) return;
+
+  const images = [
+    'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80', // F1 car
+    'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80'  // Lewis Hamilton (portrait)
+  ];
+
+  let idx = 0;
+  const swapInterval = 5000; // ms
+  heroImg.style.transition = 'opacity 0.8s ease';
+
+  const swap = () => {
+    heroImg.style.opacity = '0';
+    setTimeout(() => {
+      idx = (idx + 1) % images.length;
+      heroImg.src = images[idx];
+    }, 800);
+  };
+
+  heroImg.addEventListener('load', () => {
+    heroImg.style.opacity = '1';
+  });
+
+  setInterval(swap, swapInterval);
+})();

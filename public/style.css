@@ -142,6 +142,7 @@ h1 {
   border: 1px solid rgba(255,255,255,0.12);
   box-shadow: 0 40px 100px rgba(0, 0, 0, 0.45);
   animation: float 8s ease-in-out infinite;
+  transition: opacity 0.8s ease;
 }
 
 .glow-circle {
